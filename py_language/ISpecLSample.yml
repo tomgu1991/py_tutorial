@@ -1,0 +1,27 @@
+---
+SPEC:
+  NOTES: this is the notes
+  MAINFUNCTION: int f(int, int, int*) # find the max from arg1 to arg2
+  REFFUNCTION:
+    - int g(int, int)
+  PRE:
+    CONS:
+      - f_1 >= 0
+      - f_2 >= f_1
+  POST:
+    CONS:
+      - f_0 >= f_1
+      - f_0 <= f_2
+    EH:
+      - f_0 < 0
+      - CALL(g)
+---
+SPEC:
+  NOTES: this is notes2
+  MAINFUNCTION: malloc(_, _)
+  REFFUNCTION:
+    - free(_, _)
+  POST:
+    CONS:
+      - malloc_0 != null
+      - CALL(free(malloc_0))
