@@ -2,7 +2,7 @@
 
 ### Terminology
 
-Machine learning** is about extracting knowledge from data.
+Machine **learning** is about extracting knowledge from data.
 
 The most successful kind of machine learning algorithms are those that automate a decision making processes by generalizing from known examples. In this setting, which is known as a **supervised learning** setting, the user provides the algorithm with pairs of inputs and desired outputs, and the algorithm finds a way to produce the desired output given an input.
 
